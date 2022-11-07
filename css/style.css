@@ -1100,6 +1100,26 @@
     margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+    .infoContact p{
+       font-size: 13px;
+    }
+    .iconimginfo {
+        background-color: #F8A300;
+        width: max-content;
+        width: 35px;
+        height: 35px;
+        border-radius: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+    }
+    .iconimginfo img{
+        width: 20px;
+    }
+}
+
 .RightContactSec{
     width: 50%;
 }
