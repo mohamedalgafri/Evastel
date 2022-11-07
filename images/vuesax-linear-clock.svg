@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="vuesax_linear_clock" data-name="vuesax/linear/clock" transform="translate(-172 -188)">
+    <g id="clock" transform="translate(172 188)">
+      <path id="Vector" d="M41.667,20.833A20.833,20.833,0,1,1,20.833,0,20.841,20.841,0,0,1,41.667,20.833Z" transform="translate(4.167 4.167)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-2" data-name="Vector" d="M8.5,15.979,2.042,12.125A4.614,4.614,0,0,1,0,8.542V0" transform="translate(24.229 15.646)" fill="none" stroke="#292d32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H50V50H0Z" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>
