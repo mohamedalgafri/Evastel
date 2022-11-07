@@ -367,6 +367,24 @@
     text-decoration: none;
     transition: all ease .4s ;
 }
+
+@media (max-width:600px) {
+    .btns{
+        background-color: #F8A300;
+        color: #fff !important;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        width: max-content;
+        padding: 5px 10px;
+        border-radius: 30px;
+        height: 36px;
+        text-decoration: none;
+        transition: all ease .4s ;
+    }
+}
+
 .btns i{
     font-size: 25px;
     transition: all .5s ease;
@@ -561,6 +579,10 @@
     }
     .bluebox h1{
         font-size: 24px;
+    }
+    .leftabout > p{
+        font-size: 16px;
+        color: #8F8F8F;
     }
 }
 @media (max-width: 550px) {
