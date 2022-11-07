@@ -32,6 +32,12 @@
     }
 }
 
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+    background-color: #fff !important;
+    width: 35px;
+    height: 3px;
+}
+
 
 .searchNav{
     width: 250px;

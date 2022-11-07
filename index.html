@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper.css" />
+    <link href="css/hamburgers.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -19,8 +21,7 @@
         <a class="navbar-brand" href="#">
           <img src="images/LOGO.png" alt="" />
         </a>
-        <button
-          class="navbar-toggler"
+        <!-- <button class="hamburger hamburger--collapse" type="button"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -28,8 +29,25 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button> -->
+
+        <div class="hamburger  hamburger--3dy"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+
+
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto ms-auto gap-4 mb-2 mb-lg-0">
             <li class="nav-item">
@@ -576,6 +594,30 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      /**
+       * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+       *
+       * @private
+       * @author Todd Motto
+       * @link https://github.com/toddmotto/foreach
+       * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+       * @callback requestCallback      callback   - Callback function for each iteration.
+       * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+       * @returns {}
+       */
+        var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
+    
+        var hamburgers = document.querySelectorAll(".hamburger");
+        if (hamburgers.length > 0) {
+          forEach(hamburgers, function(hamburger) {
+            hamburger.addEventListener("click", function() {
+              this.classList.toggle("is-active");
+            }, false);
+          });
+        }
+      </script>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.js"></script>
