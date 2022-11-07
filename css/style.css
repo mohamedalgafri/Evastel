@@ -687,9 +687,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.164);
+    
 }
 
 .textcardserv{
@@ -764,6 +766,8 @@
 
 .SolutionsSection{
   position: relative;
+  width: 100% !important;
+
 }
 
 .swipervidew{
@@ -781,9 +785,23 @@
     height: 630px;
 }
 
+.solutionsvidew .videosol{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    min-width: 100%;
+    max-height: 630px;
+    object-fit: cover;
+    z-index: -1;
+}
+
 @media (max-width:600px) {
     .solutionsvidew img{
         width: 100%;
+        height: 560px;
+    }
+    .solutionsvidew .videosol{
         height: 560px;
     }
 }
@@ -924,6 +942,10 @@
         margin-bottom: 20px;
     }
     .solutionsvidew img {
+        width: 100%;
+        height: 481px;
+    }
+    .solutionsvidew .videosol {
         width: 100%;
         height: 481px;
     }
