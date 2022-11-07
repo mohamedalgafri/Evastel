@@ -160,28 +160,28 @@
 
 @media (max-width:1450px) {
     .leftheder{
-        transform: translateY(-50%) scale(0.9);
+        transform: translateY(-50%) scale(1);
         right: 5%;
     }
     
 }
 @media (max-width:1300px) {
     .leftheder{
-        transform: translateY(-50%) scale(0.8);
+        transform: translateY(-50%) scale(1);
         right: 2%;
     }
     
 }
 @media (max-width:1300px) {
     .leftheder{
-        transform: translateY(-50%) scale(0.7);
+        transform: translateY(-50%) scale(1);
         right: 2%;
     }
     
 }
 @media (max-width:991px) {
     .leftheder{
-        transform: translateY(-50%) scale(0.6);
+        transform: translateY(-50%) scale(.8);
         right: 0;
     }
 }
@@ -280,8 +280,19 @@
         height: 90vh;
     }
 }
+.imgheaderearth{
+    display: none;
+}
 @media (max-width: 991px) {
     .imgheader{
+        display: none;
+    }
+    .imgheaderearth{
+        display: block;
+    }
+}
+@media (max-width: 650px) {
+    .imgheaderearth{
         display: none;
     }
 }
