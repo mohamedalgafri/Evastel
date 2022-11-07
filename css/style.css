@@ -123,17 +123,17 @@
 }
 @media (max-width:600px) {
     .header{
-        height: 390px;
+        height: 470px;
     }
     .contantheader {
-        height: 450px !important;
+        height: 550px !important;
     }
     .imgblur {
         width: 100%;
-        height: 390px  ;
+        height: 470px  ;
     }
     .rightheder{
-        height: 390px !important;
+        height: 470px !important;
     }
     .navbar-brand img{
         width: 150px;
@@ -194,10 +194,14 @@
 @media (max-width:650px) {
     .leftheder{
         transform: translateY(-50%) scale(0.6);
-        left: -105px !important;
+        left: -100px !important;
     }
     .imgheaderearth{
         display: none;
+    }
+    .leftheder .swiper-button-next, .leftheder .swiper-button-prev{
+        width: 70px !important;
+        height: 55px !important;
     }
 }
 
@@ -251,6 +255,34 @@
 
 .leftheder .swiper-button-next {
     left: 55px;
+}
+
+@media (max-width:650px) {
+    .leftheder .swiper{
+        padding-top: 90px;
+    }
+
+    .leftheder .swiper-button-next, .leftheder .swiper-button-prev{
+        width: 60px !important;
+        height: 55px !important;
+    }
+    .leftheder .swiper-button-next {
+        left: 70px !important;
+    }
+    .textHederswiper h5{
+        font-size: 35px;
+    }
+    .textHederswiper p{
+        font-size: 22px;
+    }
+    .sotialheader .btns {
+        font-size: 22px;
+        padding: 10px 30px;
+        height: 55px;
+    }
+    .soialhed a{
+        font-size: 22px;
+    }
 }
 
 .rightheder {
