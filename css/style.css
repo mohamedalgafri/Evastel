@@ -12,6 +12,10 @@
 
 }
 
+.hamburger-box{
+    display: none;
+}
+
 @media (max-width:991px) {
     .navbar-collapse{
         margin-top: 20px;
@@ -31,6 +35,9 @@
     }
     .searchNav input{
         width: 100% !important;
+    }
+    .hamburger-box{
+        display: block;
     }
 }
 
@@ -736,7 +743,7 @@
     left: -40px;
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.322) 0px 4px 10px;
 
 
 }
