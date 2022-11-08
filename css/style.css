@@ -850,7 +850,7 @@
 }
 
 .swipervidew{
-    margin-top: 120px;
+    margin-top: 70px;
 }
 
 .solutionsvidew{
@@ -902,6 +902,9 @@
 .swipervidew .swiper{
     margin: 0 5%;
     padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 /* .swipervidew .swiper .swiper-slide{
     margin: 0 10%;
@@ -929,9 +932,37 @@
     margin-bottom: 20px;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.116);
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.233);
     border-radius: 15px;
     gap: 10px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.bgcardg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.toprightcard{
+    position: absolute;
+    top: -20px;
+    right: -5px;
+    width: 13px;
+}
+.bottonrightcard{
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+}
+.bottonleftcard{
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
 }
 
 .cardsrow{
@@ -992,13 +1023,23 @@
 .swipervidewmob{
     display: none;
 }
+.swipervidewmob .swiper{
+    padding-top: 20px;
+}
+.swipervidewmob .cardsol{
+    margin-bottom: 30px !important;
+}
+.swipervidewmob .toprightcard{
+    top: -16px;
+    width: 13px;
+}
 
 @media (max-width:500px) {
     .swipervidew{
         display: none;
     }
     .swipervidewmob{
-        margin-top: 60px;
+        margin-top: 30px;
         display: block;
     }
     .swipervidewmob .cardsol{
@@ -1027,11 +1068,11 @@
     }
     .solutionsvidew img {
         width: 100%;
-        height: 481px;
+        height: 500px;
     }
     .solutionsvidew .videosol {
         width: 100%;
-        height: 481px;
+        height: 500px;
     }
 }
 
