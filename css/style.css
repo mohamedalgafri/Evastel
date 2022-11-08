@@ -2,8 +2,36 @@
 .navbar{
     position: absolute;
     width: 100%;
-    top: 20px;
+    top: 0px;
+    padding-top: 20px;
     z-index: 99;
+}
+
+.navbar.active{
+    background-color: #1b4779 !important;
+
+}
+
+@media (max-width:991px) {
+    .navbar-collapse{
+        margin-top: 20px;
+       
+    }
+    .navbar-nav{
+        align-items:  center !important; 
+        text-align: center;
+    }
+    .navbar-nav li{
+        width: 100%; 
+    }
+    .searchNav{
+        margin-top: 20px;
+        width: 100% !important;
+        padding-right: 20px !important;
+    }
+    .searchNav input{
+        width: 100% !important;
+    }
 }
 
 .navbar-nav{
@@ -19,11 +47,12 @@
     border-radius: 30px;
 }
 
-@media (min-width: 1700px){
+/* @media (min-width: 1700px){
     .container, .container-md, .container-sm {
         max-width: 70% !important ;
     }
-} 
+}  */
+
 
 
 @media (max-width: 770px){
@@ -32,8 +61,8 @@
     }
 }
 
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
-    background-color: #fff !important;
+.hamburger-inner,.navbar  .hamburger-inner:after,.hamburger-inner:before{
+    background-color: rgb(255, 255, 255) !important;
     width: 35px;
     height: 3px;
 }
@@ -66,6 +95,9 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+
+
 
 
 /* ///////////////////////////////////////////////// */
@@ -658,6 +690,7 @@
 .imgcardserv{
     position: relative;
     width: 400px;
+    height: 260px;
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -665,6 +698,7 @@
     width: 100%;
     height: 100%;
     border-radius: 20px;
+    object-fit: cover;
 }
 
 @media (max-width:1660px) {
@@ -761,6 +795,26 @@
     transform: translateX(3px);
 }
 
+.cardServicesSection .swiper-button-next,.cardServicesSection  .swiper-button-prev{
+    transition: all ease .4s;
+    background-color: #F8A300;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+
+}
+.cardServicesSection .swiper-button-next{
+    margin-right: 10px;
+}
+.cardServicesSection  .swiper-button-prev{
+    margin-left: 10px;
+}
+.cardServicesSection .swiper-button-next:after,.cardServicesSection  .swiper-button-prev:after{
+    font-size: 16px;
+}
+
+
 
 /* //////////////////////////////////SolutionsSection////////////////// */
 
@@ -822,7 +876,7 @@
 
 .swipervidew .swiper{
     margin: 0 5%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 /* .swipervidew .swiper .swiper-slide{
     margin: 0 10%;
@@ -830,11 +884,16 @@
 
 .swiper-pagination-bullet{
     transition: all ease .4s;
+    background-color: #fff;
+    width: 20px;
+    height: 15px;
+    border-radius: 30px;
 }
 .swiper-pagination-bullet-active{
     background-color: #fff;
-    /* width: 40px;
-    border-radius: 30px; */
+    width: 45px;
+    height: 15px;
+    border-radius: 30px;
 }
 
 .cardsol{

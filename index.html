@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Evastel</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/swiper.css" />
     <link href="css/hamburgers.min.css" rel="stylesheet">
@@ -16,7 +16,8 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="images/LOGO.png" alt="" />
@@ -45,6 +46,9 @@
             <div class="hamburger-inner"></div>
           </div>
         </div>
+
+
+        
 
 
 
@@ -231,7 +235,7 @@
             </div>
             <div class="swiper-slide">
               <div class="imgcardserv">
-                <img src="images/imgcardser.png" alt="" />
+                <img src="images/imgcardser2.png" alt="" />
                 <div class="shadowcardser"></div>
                 <div class="textcardserv">
                   <img src="images/imgtextserv.png" alt="" />
@@ -253,7 +257,7 @@
             </div>
             <div class="swiper-slide">
               <div class="imgcardserv">
-                <img src="images/imgcardser.png" alt="" />
+                <img src="images/imgcardser3.png" alt="" />
                 <div class="shadowcardser"></div>
                 <div class="textcardserv">
                   <img src="images/imgtextserv.png" alt="" />
@@ -274,6 +278,8 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
@@ -293,6 +299,41 @@
       <div class="swipervidew container">
         <div class="swiper mySwiperGred">
           <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="allcardsol">
+                <div class="cardsrow">
+                  <div class="cardsol">
+                    <div class="bgorang">1</div>
+                    <h5>Backup, Recovery and Archiving</h5>
+                  </div>
+                  <div class="cardsol">
+                    <div class="bggreen">2</div>
+                    <h5>(ITSM) Operation Excellence</h5>
+                  </div>
+                  <div class="cardsol">
+                    <div class="bgorang">3</div>
+                    <h5>Backup, Recovery and Archiving</h5>
+                  </div>
+                </div>
+                <div class="cardsrow">
+                  <div class="cardsol">
+                    <div class="bggreen">4</div>
+                    <h5>Information Security</h5>
+                  </div>
+                  <div class="cardsol">
+                    <div class="bgorang">5</div>
+                    <h5>Platforms and Blades</h5>
+                  </div>
+                  <div class="cardsol">
+                    <div class="bggreen">6</div>
+                    <h5>
+                      Enterprise <br />
+                      Systems
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="swiper-slide">
               <div class="allcardsol">
                 <div class="cardsrow">
@@ -585,18 +626,19 @@
       </div>
     </footer>
 
+
     <script>
-      /**
-       * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
-       *
-       * @private
-       * @author Todd Motto
-       * @link https://github.com/toddmotto/foreach
-       * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
-       * @callback requestCallback      callback   - Callback function for each iteration.
-       * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
-       * @returns {}
-       */
+
+
+      
+        let navbar = document.getElementById('navbar');
+        let btnnav = document.querySelector('.hamburger-box');
+
+        btnnav.addEventListener("click",()=>{
+          navbar.classList.toggle("active");
+        })
+
+
         var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
     
         var hamburgers = document.querySelectorAll(".hamburger");

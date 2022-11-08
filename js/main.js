@@ -1,6 +1,7 @@
 
 
 
+
       var swiper = new Swiper(".mySwiperHeader", {
         navigation: {
           nextEl: ".swiper-button-next",
@@ -15,6 +16,10 @@
     var swiper = new Swiper(".mySwiperCard", {
       slidesPerView: 1,
       spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       breakpoints: {
         540: {
           slidesPerView: 1,
