@@ -1,4 +1,24 @@
 
+ @font-face {
+    font-family: myFirstFont;
+    src: url("../Fonts/segoeui.ttf");
+    src: url("../Fonts/segoeuib.ttf");
+    /* src: url("../Fonts/segoeuii.ttf");
+    src: url("../Fonts/segoeuil.ttf");
+    src: url("../Fonts/segoeuisl.ttf");
+    src: url("../Fonts/segoeuiz.ttf");
+    src: url("../Fonts/seguibl.ttf"); */
+    src: url("../Fonts/seguibli.ttf");
+    src: url("../Fonts/seguili.ttf");
+    src: url("../Fonts/seguisb.ttf");
+  }
+  
+  
+  
+  *{
+    font-family: myFirstFont !important;
+  }
+
 .navbar{
     position: absolute;
     width: 100%;
@@ -83,7 +103,7 @@
     display: flex;
     background-color: rgba(255, 255, 255, 0.212);
     border-radius: 30px;
-    padding: 7px 20px;
+    padding: 7px 10px;
     align-items: center;
     padding-right: 40px ;
     border: 1px solid #fff;
@@ -505,7 +525,7 @@
     font-size: 200px;
     margin: 0 !important;
     padding: 0 !important;
-    font-weight: 700 !important;
+    font-weight: 900 !important;
     z-index: 1;
     color: #d6d6d642;
 }
@@ -1072,7 +1092,7 @@
 
 .PartnersSection{
     margin-top: 170px;
-    margin-bottom: 170px;
+    margin-bottom: 70px;
 }
 
 @media (max-width: 991px) {
@@ -1125,6 +1145,12 @@
 
 /* /////////////////////////////// contactsSection //////////////////////////////////// */
 
+
+.contactsSection{
+    padding-top: 90px;
+    padding-bottom: 20px;
+    background-color: #F9F9F9;
+}
 
 .allcontact{
     display: flex;
@@ -1256,12 +1282,17 @@
 }
 .footertop{
     background-color: #F9F9F9;
+    background-color: #fff;
     margin-top: 20px;
     padding: 10px;
 }
 .allfooter{
     display: flex;
     align-items: center;
+}
+
+.allfooter  img{
+    margin-top: -20px;
 }
 
 .munefooter{
@@ -1286,11 +1317,18 @@
     }
 }
 
+.footerrb{
+    background-color: #F9F9F9;
+    padding: 7px;
+}
+
 .footerbotton{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     color: #444444;
+
+
 }
 
 .sotialfooter{
