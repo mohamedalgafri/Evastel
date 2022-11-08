@@ -2,15 +2,10 @@
  @font-face {
     font-family: myFirstFont;
     src: url("../Fonts/segoeui.ttf");
-    src: url("../Fonts/segoeuib.ttf");
-    /* src: url("../Fonts/segoeuii.ttf");
-    src: url("../Fonts/segoeuil.ttf");
-    src: url("../Fonts/segoeuisl.ttf");
-    src: url("../Fonts/segoeuiz.ttf");
-    src: url("../Fonts/seguibl.ttf"); */
-    src: url("../Fonts/seguibli.ttf");
-    src: url("../Fonts/seguili.ttf");
-    src: url("../Fonts/seguisb.ttf");
+  }
+  @font-face {
+    font-family: blodfont;
+    src: url("../Fonts/seguibl.ttf");
   }
   
   
@@ -283,7 +278,7 @@
 .textHederswiper h1{
     font-weight: 200;
     margin: 0 !important;
-    font-size: 60px;
+    font-size: 57px;
 }
 .textHederswiper h5{
     margin: 0 !important;
@@ -511,9 +506,11 @@
 .titlesection h1:nth-child(1){
     position: relative;
     z-index: 3;
+
 }
 .titlesection h1 span{
-    font-weight: 800;
+    font-weight: bolder !important;
+    font-family: blodfont !important;
 
 }
 
@@ -522,12 +519,13 @@
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    font-size: 200px;
+    font-size: 180px;
     margin: 0 !important;
     padding: 0 !important;
-    font-weight: 900 !important;
+    font-weight: 700 !important;
     z-index: 1;
     color: #d6d6d642;
+    font-family: blodfont !important;
 }
 
 @media (max-width: 1600px) {
