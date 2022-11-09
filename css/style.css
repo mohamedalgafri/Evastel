@@ -1414,3 +1414,170 @@
 }
 
 /* ////////////////////////////////////////////////// */
+
+
+/* ########################### about ######################### */
+
+
+.bodyabout{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.headerabout{
+    height: 700px !important ;
+    position: relative;
+    width: 100%;
+}
+.headerabout .bgheder img{
+    height: 500px;
+}
+
+.titleabouthed{
+    height: 500px;
+    float: left;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.titleabouthed .titlesection .colwight{
+    color: #fff;
+}
+
+.rightabout{
+    width: 50%;
+}
+
+.rightabout h1{
+    margin-bottom: 20px;
+}
+
+.f-600{
+    font-family: blodfont !important;
+}
+
+.rightabout p{
+    color: #8F8F8F;
+}
+
+.leftabout{
+    width: 40%;
+}
+
+.EvastelHistory{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 14px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.lesthistor{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.popHistor{
+    width: 15px;
+    height: 15px;
+    background-color: #F8A300;
+    border-radius: 7px;
+    margin-top: -15px;
+    padding: 8px;
+}
+
+.EvastelHistory .imgshaphes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+
+.rightblanettext{
+    width: 50%;
+}
+.leftblanettext{
+    width: 50%;
+    position: relative;
+
+}
+
+.secblanettext{
+    background-color: #F9F9F9;
+    padding-top: 1px;
+    margin-top: 30px;
+}
+
+.blanettext{
+    margin-top: 30px;
+    display: flex;
+    align-items: center !important;
+}
+
+.rightblanettext p{
+    color: #8F8F8F;
+}
+
+
+.earthabout{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width:991px) {
+    .headerabout{
+        height: 350px !important ;
+    }
+    .headerabout .bgheder img{
+        height: 350px;
+    }
+
+    .titleabouthed .titlesection .colwight{
+        font-size: 40px;
+    }
+    .titleabouthed .titlesection .textTitleSec{
+        font-size: 90px;
+    }
+    
+    .titleabouthed{
+        height: 370px;
+    }
+
+    .bodyabout{
+        flex-direction: column;
+    }
+    .rightabout{
+        width: 100%;
+    }
+    .leftabout{
+        width: 100%;
+    }
+    .blanettext{
+        flex-direction: column;
+    }
+    .rightblanettext{
+        width: 100%;
+    }
+    .leftblanettext{
+        width: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    .titleabouthed .titlesection .colwight{
+        font-size: 35px;
+    }
+    .titleabouthed .titlesection .textTitleSec{
+        font-size: 70px;
+    }
+}
