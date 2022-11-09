@@ -153,6 +153,7 @@
 .bgheder{
     position: absolute;
     width: 100%;
+    z-index: -1;
 }
 
 .shdowheder{
@@ -1419,6 +1420,22 @@
 /* ########################### about ######################### */
 
 
+.linksSotial{
+    display: flex;
+    justify-content: space-between;
+}
+.linksSotial .breadcrumb a{
+    color: #fff;
+    text-decoration: none;
+    transition: all ease .3s;
+}
+.linksSotial .breadcrumb a:hover{
+    color: #F8A300;
+}
+.linksSotial .breadcrumb .active{
+    color: #fff;
+}
+
 .bodyabout{
     display: flex;
     justify-content: space-between;
@@ -1435,7 +1452,7 @@
 }
 
 .titleabouthed{
-    height: 500px;
+    height: 440px;
     float: left;
     margin-right: auto;
     align-items: center;
@@ -1443,6 +1460,9 @@
     margin-top: 20px;
 }
 
+.titleabouthed .titlesection{
+    margin-top: 80px;
+}
 .titleabouthed .titlesection .colwight{
     color: #fff;
 }
@@ -1536,10 +1556,10 @@
 
 @media (max-width:991px) {
     .headerabout{
-        height: 350px !important ;
+        height: 300px !important ;
     }
     .headerabout .bgheder img{
-        height: 350px;
+        height: 300px;
     }
 
     .titleabouthed .titlesection .colwight{
@@ -1548,9 +1568,16 @@
     .titleabouthed .titlesection .textTitleSec{
         font-size: 90px;
     }
+
+    .soialhed{
+        display: none;
+    }
     
     .titleabouthed{
-        height: 370px;
+        height: 250px;
+    }
+    .rightabout h1{
+        margin-top: 20px;
     }
 
     .bodyabout{
