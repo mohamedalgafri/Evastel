@@ -1585,7 +1585,7 @@
     .bodyabout{
         flex-direction: column;
     }
-    .rightabout{
+    .bodyabout .rightabout{
         width: 100%;
     }
     .leftabout{
