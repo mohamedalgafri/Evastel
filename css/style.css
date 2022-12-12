@@ -1220,6 +1220,7 @@
     border-radius: 10px;
     width: 100%;
     outline: none;
+    background-color: transparent;
 }
 .inputscontact textarea{
     padding: 14px;
@@ -1227,6 +1228,7 @@
     border-radius: 10px;
     width: 100%;
     outline: none;
+    background-color: transparent;
 }
 
 
@@ -1453,12 +1455,12 @@
 }
 
 .titleabouthed{
-    height: 440px;
-    float: left;
+    height: 460px;
+    /* float: left; */
     margin-right: auto;
     align-items: center;
     display: flex;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .titleabouthed .titlesection{
@@ -1576,7 +1578,7 @@
     }
     
     .titleabouthed{
-        height: 250px;
+        height: 265px;
     }
     .rightabout h1{
         margin-top: 20px;
@@ -1607,7 +1609,7 @@
         font-size: 35px;
     }
     .titleabouthed .titlesection .textTitleSec{
-        font-size: 70px;
+        font-size: 65px;
     }
 }
 
@@ -1625,3 +1627,201 @@
     margin-top: 20px;
 }
 
+/* ############################ Contact Page ############################ */
+
+.allcontact{
+    margin-top: 0;
+}
+.contactpage{
+    margin-top: -200px;
+}
+
+.contactpage{
+    padding-top: 50px;
+}
+
+@media (max-width:400px) {
+    .titleabouthed .titlesection .textTitleSec{
+        font-size: 60px;
+    }
+}
+@media (max-width:991px) {
+    .contactpage{
+        margin-top: 0px;
+    }
+}
+
+
+/* ################################ PARTNERS ###################################### */
+
+.partnerCards{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.partnerCard{
+    display: flex;
+    padding: 30px 20px;
+    align-items: center;
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    border: 1px solid #e9e7e773;
+}
+
+.imgPartnerCard{
+    width: 35%;
+    margin-bottom: 10px;
+}
+.imgPartnerCard img{
+    width: auto;
+}
+.textPartnerCard{
+    width: 65%;
+    padding-right: 15px;
+}
+
+@media (max-width:1200px) {
+    .imgPartnerCard img{
+        width: 100%;
+    }
+    .textPartnerCard{
+        width: 65%;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width:991px) {
+    .partnerCard{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgPartnerCard{
+        width: auto;
+    }
+    .imgPartnerCard img{
+        width: 330px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .textPartnerCard{
+        width: 100%;
+
+    }
+    /* .read{
+        margin: 0 auto;
+    } */
+}
+@media (max-width:500px) {
+    .imgPartnerCard img{
+        width: 260px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+/* ############################## services ############################### */
+
+.cardsServices{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    border: 1px solid #E6E6E6;
+    box-shadow: rgba(86, 94, 89, 0.26) 0px 5px 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+   
+}
+
+.cardsServicesref{
+    flex-direction: row-reverse;
+}
+
+
+.rightCardServices{
+    width: 50%;
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+
+}
+.righttextser{
+    padding: 30px;
+}
+.rightCardServices p{
+    color: #5a5a5a;
+}
+
+.leftCardServices{
+    width: 50%;
+}
+.leftCardServices img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+.shapcardserv{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.moreleftCardServices {
+    width: 50%;
+}
+.moreleftCardServices img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.rightCardServicessol{
+    width: 50%;
+    position: relative;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.cardsServices:last-child{
+    margin-bottom: 100px;
+}
+
+@media (max-width:991px) {
+    .cardsServices{
+        flex-direction: column;
+    }
+    .rightCardServices{
+        width: 100%;
+        overflow: hidden;
+    }
+    .rightCardServicessol{
+        width: 100%;
+        overflow: hidden;
+    }
+    .leftCardServices{
+        width: 100%;
+    }
+    .moreleftCardServices {
+        width: 100%;
+        height: 340px;
+    }
+    .righttextser{
+        padding: 30px 25px;
+    }
+}
+
+.linebotn{
+    color: rgba(0, 0, 0, 0.267);
+    border-width: 1px;
+    margin-bottom: 20px;
+}
